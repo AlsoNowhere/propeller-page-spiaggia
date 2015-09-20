@@ -11,3 +11,15 @@ Below are a few things which I have noticed with the original design:
  - The lunch times for Mon-Fri say 12am (midnight) when it should say 12pm (noon).
  - The content input boxes for 'Join the yacht club' has a colour too similar to the background image which makes it hard to read the text (white for text and light grey for background colour).
  - 'Propeller' buttons have a propeller swipe which is the same colour as the text, meaning its distracting when trying to read the text.
+
+In order to make the web page accurate to the original design despite not hosting the font I have used the following alternative fonts:
+FuturaPT Book
+is now:
+Google-font: 'Muli'.
+
+MuseoSansRounded
+is now
+Google-font: 'Raleway'.
+
+
+
