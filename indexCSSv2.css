@@ -1,0 +1,166 @@
+        /*CSS sheet ==============================*/
+        /*CSS logic: objects have a 'main' element which controls where there are on the page vertically and a container which adds a margin to center the content inside.*/
+
+        /*Missing font - Night Club.*/
+        @font-face {
+           font-family: Night_Club;
+           src: url(Night_Club_70s_Regular.ttf);
+        }
+
+        /*Setting out overall properties for all elements.*/
+        * { margin: 0px; padding: 0px; box-sizing: border-box; -webkit-sizing: border-box; -moz-sizing: border-box; z-index: 1; cursor: default; }
+        *:focus {
+            outline: none;
+        }
+        /*Neutralising 'link' CSS.*/
+        a { text-decoration: none; color: #000000; }
+
+        /*Content at Top - Introduction.*/
+        .top-content { position: relative; width: 100%; /*height: 600px;*/ overflow: hidden; }
+        .top-content-container { position: relative; width: 100%; max-width: 1280px; margin: 0 auto; }
+
+        .top-content-nav { float: left; width: 33%; margin: 60px 0 0; }
+        .top-content-nav-logo { width: 80%; margin: 0 auto; }
+        .top-content-nav-links { width: 43%; height: 125px; margin: 53px auto 0; }
+        .top-content-button { position: relative; width: 100%; height: 30px; margin: 0 0 18px 0; border: 3px solid #000000; text-shadow: none; font-size: 18px; /*font-family: "FuturaPT";*/ font-family: 'Muli', sans-serif; font-weight: bold; text-transform: uppercase; line-height: 24px; text-align: center; color: #000000; /*padding: 3px 0 0;*/ cursor: pointer; overflow: hidden; transition: 0.5s; }
+        .top-content-button:hover { background-color: rgba(109,185,195,0.7); color: #667E82; text-shadow: 2px 2px 7px #A5A5A5; }
+
+        .top-content-section1 { float: left; width: 66%; margin: 100px 0 0; }
+        .top-content-section11 { float: left; width: 46%; margin: 2%; background-color: rgb(224, 224, 224); }
+        .top-content-section12 { float: left; width: 46%; margin: 2%; /*height: 200px;*/ font-size: 16px; /*font-family: "FuturaPT";*/ font-family: 'Muli', sans-serif; font-weight: bold; color: #000000; line-height: 1.625; text-align: left; }
+        .top-content-nav-logo img { cursor: pointer; }
+
+        /*Content - Top last - Navigation.*/
+        .quick-links { position: relative; width: 100%; height: 258px; background-color: #FFFFFF; opacity: 0.988; overflow: hidden; }
+        .quick-links-container { position: relative; width: 100%; max-width: 1280px; height: 100%; margin: 0 auto; }
+
+        .quick-links-wrapper { width: 25%; height: 100%; }
+        #PHire { position: absolute; left: 0%; }
+        #Cinema { position: absolute; left: 25%; }
+        #Events { position: absolute; left: 50%; }
+        #Games { position: absolute; left: 75%; }
+        .quick-links-object { position: absolute; width: 60%; height: 74.5%; margin: 25px 0 0; }
+        .quick-links-object-title { position: absolute; left: 0px; width: 120px; margin: 30px 0 0; left: 50%; transform: translateX(-50%); font-size: 30px; /*font-family: "NightClubs";*/ font-family: Night_Club;  color: #FFFFFF; text-transform: uppercase; text-align: center; line-height: 0.867; }
+        .quick-links-object img, .quick-links-object span { cursor: pointer; }
+
+        /*Handling background images.*/
+        .social-background { position: absolute; top: 0px; height: 1080px; width: 100%; overflow: hidden; }
+        .social-background-img { height:120%; position: absolute; z-index: 0; overflow: hidden; }
+
+        /*'Join the yacht club' sign in page.*/
+        .sign-up { position: relative; width: 100%; height: 280px; z-index: 2; /*overflow: hidden;*/ }
+        .sign-up-container { position: relative; width: 715px; height: 100%; margin: 0 auto; }
+        .sign-up-title { position: relative; width: 85%; margin: 20px 0; font-size: 30px; /*font-family: "NightClubs";*/ font-family: Night_Club;  color: rgb(211, 114, 158); text-transform: uppercase; }
+        .sign-up-info { position: relative; width: 85%; margin: 20px 0; font-size: 16px; /*font-family: "FuturaPT";*/ font-family: 'Muli', sans-serif; font-weight: bold; color: rgb(0, 0, 0); }
+        .sign-up-input { position: relative; width: 85%; height: 110px; margin: 20px 0; }
+
+        /*.sign-up-container11 { font-size: 20px; color: purple; }*/
+        /*.sign-up-container12 { font-size: 14px; color: #000000; }*/
+
+        .sign-up-input-box { position: absolute; height: 39px; border: 3px solid #FFFFFF; border-radius: 3px; }
+        .sign-up-input-box-label { float: left; width: 30%; height: 33px; padding: 0 0 0 6px; font-size: 14px; /*font-family: "FuturaPT";*/ font-family: 'Muli', sans-serif; font-weight: bold; line-height: 33px; color: #009A9B; border: none; background: transparent; }
+        .sign-up-input-box-value { float: left; width: 70%; height: 33px; padding: 0 0 0 6px; font-size: 14px; /*font-family: "FuturaPT";*/ font-family: 'Muli', sans-serif; font-weight: bold; line-height: 33px; color: #009A9B; border: none; background: transparent; }
+        .sign-up-input-box-smallValue { float: left; width: 33.3%; height: 33px; padding: 0 0 0 6px; font-size: 14px; /*font-family: "FuturaPT";*/ font-family: 'Muli', sans-serif; font-weight: bold; line-height: 33px; color: #009A9B; border-right: 3px solid #FFFFFF; background: transparent; }
+        .sign-up-input-box-smallValue:nth-child(3) { border: none; }
+        .sign-up-dropDown { float: right; width: 25%; height: 33px; font-size: 14px; /*font-family: "FuturaPT";*/ font-family: 'Muli', sans-serif; }
+        .sign-up-dropDown:nth-child(2) { width: 75%; }
+        .sign-up-dropDown-options { position: absolute; top: 39px; width: 33.3%; height: 240px; overflow: auto; /*background-color: #FFFFFF;*/ color: #000000; font-size: 14px; /*font-family: "FuturaPT";*/ font-family: 'Muli', sans-serif; line-height: 1.3; padding: 0 0 0 3px; visibility: hidden; }
+        .sign-up-input-box-smallValue ul { list-style-type: none; }
+        .sign-up-input-box-smallValue ul li { background-color: rgba(255,255,255,0.8); padding: 0 0 0 6px; }
+        .sign-up-input-box-smallValue ul li:hover { background-color: lightblue; }
+        #SUDay { left: 33.3%; }
+        #SUMonth { left: 66.6%; }
+        .visible { visibility: visible; }
+        #Name { top: 20px; left: 0px; width: 48.5%; }
+        #Email { top: 20px; right: 0px; width: 48.5%; }
+        #LastName { top: 70px; left: 0px; width: 48.5%; }
+        #Date { top: 70px; right: 0px; width: 48.5%; }
+        .sign-up-button { position: absolute; top: 160px; right: 0px; cursor: pointer; }
+        .sign-up-button-content { position: absolute; right: 0px; width: 92px; height: 92px; border-radius: 50%; background-color: #99d5ce; color: #FFFFFF; font-size: 30px; /*font-family: "NightClubs";*/ font-family: Night_Club;  text-transform: uppercase; line-height: 2.867; text-align: center; }
+        .sign-up-input-box input { cursor: text; }
+
+        /*Twitter content.*/
+        .twitter { position: relative; width: 100%; height: 200px; background-color: #009a9b; overflow: hidden; }
+        .twitter-container { position: relative; width: 575px; height: 100%; background-color: #009a9b; margin: 0 auto; }
+        .twitter-content { position: relative; width: 100%; margin: 20px auto 0; height: 100%; }
+        .twitter-icon { position: absolute; top: 20px; left: 0px; width: 120px; height: 120px; border-radius: 50%; background-color: #fecc00; padding: 38px 0 0 35px; }
+        #twitter-address { position: absolute; top: 20px; left: 110px; width: 210px; height: 30px; color: #FFFFFF; font-size: 23px; /*font-family: "FuturaPT";*/ font-family: 'Muli', sans-serif; font-weight: bold; line-height: 1.174; text-align: center; }
+        #twitter-address a { cursor: pointer; color: #FFFFFF; }
+        #twitter-post { position: absolute; top: 50px; left: 110px; width: 370px; height: 45px; color: #FFFFFF; font-size: 16px; /*font-family: "FuturaPT";*/ font-family: 'Muli', sans-serif; font-weight: bold; line-height: 1.375; text-align: center; }
+        .twitter-content-options { position: absolute; top: 115px; left: 110px; width: 210px; height: 40px; }
+        .twitter-content-options-img { margin: 0 auto; height: 10px }
+        .twitter-content-options .twitter-content-options-img:nth-child(1) { width: 21px; }
+        .twitter-content-options .twitter-content-options-img:nth-child(2) { width: 22px; }
+        .twitter-content-options .twitter-content-options-img:nth-child(3) { width: 19px; }
+        .twitter-option { float: left; width: 70px; height: 50px; font-family: 'Muli', sans-serif; font-size: 16px; color: rgb(254, 204, 0); text-align: center; }
+        .twitter-option, .twitter-content-options-img { cursor: pointer; }
+
+        /*Instagram content. Sliding track handled in JS file.*/
+        .instagram { position: relative; width: 100%; height: 300px; overflow: hidden; }
+        .instagram-container { position: relative; width: 1330px; height: 100%; margin: 0 auto; }
+        .instagram-slider { position: relative; width: 100%; height: 245px; overflow: hidden; margin: 50px 0 0; }
+        .instagram-arrow-left { position: absolute; left: 0px; width: 45px; margin: 95px 0 0; }
+        .instagram-arrow-left-img { position: absolute; left: 0px; width: 25px; cursor: pointer; transition: 0.25s; }
+        .instagram-arrow-left-img:hover { opacity: 0.8; }
+        .instagram-slider-center { position: absolute; left: 45px; width: 1240px; height: 220px; border-bottom: 9px solid #FFFFFF; overflow: hidden; }
+        .instagram-slider-track { position: absolute; left: 0px; width: 2520px; height: 220px; }
+        .instagram-arrow-right { position: absolute; right: 0px; width: 45px; margin: 95px 0 0; }
+        .instagram-arrow-right-img { position: absolute; right: 0px; width: 25px; cursor: pointer; transition: 0.25s; }
+        .instagram-arrow-right-img:hover { opacity: 0.8; }
+        .instagram-slider-track-photo { float: left; width: 190px; height: 190px; border-radius: 5px; margin: 10px 20px 10px 0; }
+        .instagram-icon-wrapper { position: absolute; left: 50%; transform: translateX(-50%); width: 53px; height: 53px; margin: 190px 0 auto; border-radius: 50%; background-color: #FFFFFF; overflow: hidden; }
+        .instagram-icon-wrapper img { cursor: pointer; }
+        .instagram-icon { position: absolute; left: 50%; transform: translate(-50%,-50%); top: 50%; width: 30px; }
+
+        /*Facebook content. Position handled in JS file.*/
+        .facebook { position: relative; width: 100%; height: 368px; overflow: hidden; }
+        .facebook-container { position: relative; width: 1050px; height: 100%; margin: 0 auto; }
+        .facebook-title { width: 100%; height: 50px; }
+        .facebook-title-content { float: left; font-size: 30px; /*font-family: "MuseoSansRounded";*/ font-family: 'Raleway', sans-serif; margin: 0 0 0 5px; color: rgb(0, 139, 192); text-transform: uppercase; line-height: 2.6; cursor: pointer; }
+        .facebook-title-content img { cursor: pointer; }
+        .facebook-photos-wrapper { position: relative; width: 100%; height: 300px; }
+        .facebook-photo { position: absolute; width: 43px; height: 43px; background-color: #FFFFFF; }
+
+        /*'Spiaggia' image title for footer.*/
+        .footerheader { position: relative; width: 100%; height: 16px; border-bottom: 2px solid #000000; }
+        .footerheader-container { width: 432px; margin: 0 auto; background-color: #FFFFFF; }
+
+        /*Content bottom.*/
+        .footer { position: relative; width: 100%; height: 300px; /*overflow: hidden;*/ margin: 50px 0 0; border-bottom: 1px solid #000000; }
+        .footer-container { position: relative; width: 100%; max-width: 1280px; height: 100%; margin: 0 auto; }
+        .footer-contentBox { float: left; width: 25%; height: 100%; font-size: 14px; /*font-family: "FuturaPT";*/ font-family: 'Muli', sans-serif; font-weight: bold; color: #000000; line-height: 1.714; text-align: center; }
+        .footer-contentBox h4 { font-size: 18px; /*font-family: "NightClubs";*/ font-family: Night_Club; color: rgb(1,0,0); text-transform: uppercase; line-height: 4.333; }
+        .footer-inputBox { position: relative; width: 100%; height: 30px; margin: 3px 0; border: 1px solid #000000; padding: 0 0 0 3px; font-size: 12px; /*font-family: "FuturaPT";*/ font-family: 'Muli', sans-serif; font-weight: bold; line-height: 28px; text-align: left; }
+        .footer-inputBox-label { float: left; width: 35%; height: 100%; font-size: 12px; /*font-family: "FuturaPT";*/ font-family: 'Muli', sans-serif; font-weight: bold; border: none; vertical-align: middle; }
+        .footer-dropDown { float: right; width: 25%; height: 29px; text-align: center; }
+        .footer-dropDown:nth-child(2) { width: 75%; }
+        .footer-dropDown-options { position: absolute; top: 29px; width: 33.3%; height: 145px; overflow: auto; /*background-color: #FFFFFF;*/ color: #000000; font-size: 14px; /*font-family: "FuturaPT";*/ font-family: 'Muli', sans-serif; line-height: 1.3; padding: 0 0 0 3px; visibility: hidden; }
+        .footer-inputBox-label ul { list-style-type: none; }
+        .footer-inputBox-label ul li { background-color: rgba(255,255,255,0.8); padding: 0 0 0 6px; }
+        .footer-inputBox-label ul li:hover { background-color: lightblue; }
+        #FODay { left: 33.3%; }
+        #FOMonth { left: 66.6%; }
+        .footer-button { width: 45px; height: 45px; border-radius: 50%; margin: 0 auto; background-color: #000000; font-family: Night_Club; color: #FFFFFF; line-height: 45px; text-align: center; cursor: pointer; }
+        .footer-social-wrapper { text-align: center; margin: 0 auto; width: 100px; cursor: pointer; }
+        .footer-contentBox:nth-child(1) .footer-social-wrapper, .footer-social-wrapper .footer-social:nth-child(1) { width: 205px; }
+        .footer-contentBox .footer-inputBox:nth-child(5) .footer-inputBox-label { width: 33%; border-right: 1px solid #000000; }
+        .footer-contentBox .footer-inputBox:nth-child(5) .footer-inputBox-label:nth-child(3) { border: none;}
+        .footer-container .footer-inputBox-label:nth-child(9) { width: 33%; }
+        .footer-social { height: 24px; margin: 0 0 5px 0; text-align: left; }
+        .footer-social-icon { float: left; content: 'c'; color: #000000; text-align: center; display: inline-block; margin: 0 7px 0 0; padding: 2px 0 0; position: relative; height: 24px; width: 24px; background: #000; border-radius: 50%; line-height: 24px; cursor: pointer; }
+        .footer-social-icon img { cursor: pointer; }
+        .footer-social:nth-child(2) .footer-social-icon { padding: 3px 0 0; }
+        .footer-social-text { float: left; cursor: pointer; }
+        .footer-inputBox input { cursor: text; }
+
+        /*Last footer, link to Propeller.*/
+        .propeller { position: relative; width: 1280px; margin: 0 auto; height: 53px; }
+        .propeller-content { position: absolute; right: 0px; margin: 20px 0 0; font-size: 10px; font-family: "Trebuchet MS"; color: rgb(106, 106, 106); text-transform: uppercase; line-height: 3; text-align: right; cursor: pointer; }
+        .propeller-content img { cursor: pointer; }
+
+        /*Handling for slanting class.*/
+        .flip { transition: 0.25s; box-shadow: none; border-radius: 50%; opacity: 1; }
+        .flip:hover { box-shadow: 0px 2px 10px rgba(0,0,0,.2); opacity: 0.8; }
+
+        /*Used to prevent content selecting, this is more for preventing unintended side affects on accident double clicking not for copywriting.*/
+        .Unsele { -moz-user-select: none; -webkit-user-select: none; -ms-user-select:none; user-select:none;-o-user-select:none;unselectable: on;onselectstart: return false;onmousedown: return false; }
